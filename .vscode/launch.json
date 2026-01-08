@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "swift-lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:bug-windows}",
+            "name": "Debug wendy",
+            "program": "${workspaceFolder:bug-windows}/.build/debug/wendy",
+            "preLaunchTask": "swift: Build Debug wendy"
+        },
+        {
+            "type": "swift-lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:bug-windows}",
+            "name": "Release wendy",
+            "program": "${workspaceFolder:bug-windows}/.build/release/wendy",
+            "preLaunchTask": "swift: Build Release wendy"
+        }
+    ]
+}
