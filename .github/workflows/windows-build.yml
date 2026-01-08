@@ -22,9 +22,7 @@ permissions:
 jobs:
   build-windows:
     name: Build & Bundle (Windows)
-    runs-on:
-      - runs-on=${{ github.run_id }}/image=windows25-full-x64/family=c7i
-      - spot=false
+    runs-on: windows-latest
     env:
       # Default to release on main branch, otherwise use input or default to debug
       BUILD_CONFIG: ${{ github.ref == 'refs/heads/main' && 'release' || inputs.configuration || 'debug' }}
